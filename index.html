@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+ 	
+</head>
+<body class="eighty-skin">
+	<div id="container" >
+		<h1>UNIX PERMISSION CALCULATOR</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>
+						SPECIAL
+					</th>
+
+					<th>
+						USER
+					</th>
+
+					<th>
+						GROUP
+					</th>
+
+					<th>
+						OTHER
+					</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>
+						<label><input type="checkbox" id="special1" class="special setuid" value="1"><span></span></label>
+						<label for="special1">Setuid</label>
+					</td>
+					<td>
+						<label><input type="checkbox" id="user1" class="user read" value="1"><span></span></label>
+						<label for="user1">Read</label>
+					</td>
+					<td>
+						<label><input type="checkbox" id="group1" class="group read" value="1"><span></span></label>
+						<label for="group1">Read</label>
+					</td>
+					<td>
+						<label><input type="checkbox" id="other1" class="other read" value="1"><span></span></label>
+						<label for="other1">Read</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label><input type="checkbox" id="special2" class="special setgid" value="1"><span></span></label>
+						<label for="special2">Setgid</label>
+					</td>
+					<td>
+						<label><input type="checkbox" id="user2" class="user write" value="1"><span></span></label>
+						<label for="user2">Write</label>
+					</td>
+					<td>
+						<label><input type="checkbox" id="group2" class="group write" value="1"><span></span></label>
+						<label for="group2">Write</label>
+					</td>
+					<td>
+						<label><input type="checkbox" id="other2" class="other write" value="1"><span></span></label>
+						<label for="other2">Write</label>
+					</td>
+
+				</tr>
+				<tr>
+					<td>
+						<label><input type="checkbox" id="special3" class="special stickybit" value="1"><span></span></label>
+						<label for="special3">Sticky bit</label>
+					</td>
+					<td>
+						<label><input type="checkbox" id="user3" class="user execute" value="1"><span></span></label>
+						<label for="user3">Execute</label>
+					</td>
+					<td>
+						<label><input type="checkbox" id="group3" class="group execute" value="1"><span></span></label>
+						<label for="group3">Execute</label>
+					</td>
+					<td>
+						<label><input type="checkbox" id="other3" class="other execute" value="1"><span></span></label>
+						<label for="other3">Execute</label>
+					</td>
+				</tr>
+			</tbody>
+
+			
+
+		</table>
+		<div class="text-view">
+			<div class="input-container">
+				<input type="text" name="octal" value="0000">
+				<button>=</button>
+			</div>
+			
+		</div>
+	</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+@font-face{ 
+	font-family: 'unixpermissionfont';
+	src: url('fonts/heavy_data-webfont.eot');
+	src: url('fonts/heavy_data-webfont.eot?iefix') format('eot'),
+	     url('fonts/heavy_data-webfont.woff') format('woff'),
+	     url('fonts/heavy_data-webfont.ttf') format('truetype'),
+	     url('fonts/heavy_data-webfont.svg#webfont') format('svg');
+}
+html{background:#000;}
+
+body{
+	position: fixed;
+    height: 100%;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	min-width: 320px;
+	width: 100%;
+
+}
+#container{
+	padding: 16px;
+	text-align: center;
+}
+
+
+
+table{
+	width: 100%;
+	text-align:left;
+	font-size: 14px;
+}
+
+label{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.text-view{
+	padding: 24px 0;
+}
+
+.text-view .input-container{
+
+	position:relative;
+}
+
+.text-view input {
+	padding: 16px 0;
+	width:100%;
+	height:45px;
+	font-size: 70px;
+	font-family: 'unixpermissionfont';
+	text-align: center;
+	outline: none;
+	border: 0;
+    background: gainsboro;
+}
+.text-view  button {
+	position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 77px;
+    width: 85px;
+    border: 0;
+}
+
+/****skin **/
+
+.eighty-skin{
+	background: #00000094 url(background-skin.jpg) no-repeat;
+    background-blend-mode: multiply;
+    background-size:cover;
+}
+
+@media (min-width: 768px){
+	.eighty-skin{
+		background: #00000094 url(background-skin-big.jpg) no-repeat;
+		background-size:cover;
+	}
+}
+
+.eighty-skin h1{
+	color: aqua;
+	font-family: 'unixpermissionfont';
+	text-shadow: 0 0 25px #0a7a96;
+}
+
+.eighty-skin table{
+    padding: 6px 16px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    border-spacing: 0px 18px;
+    border-collapse: separate;
+}
+
+.eighty-skin table,
+.eighty-skin button{
+}
+
+.eighty-skin label{
+	position:relative;
+}
+
+.eighty-skin table thead th {
+    font-size: 16px;
+    font-family: courier, serif;
+    font-style: italic;
+    color: #e265db;
+    text-shadow: 0 0 25px #ff00f8;
+}
+
+.eighty-skin input[type=checkbox] {
+    position: absolute;
+    z-index: -9999;
+    -webkit-appearance: none;
+}
+
+.eighty-skin label span {
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    background: #77000054;
+}
+
+.eighty-skin input:checked + span {
+    background: #ff7328;
+	background: -moz-radial-gradient(center, ellipse cover, #ff7328 0%, #cf0404 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, #ff7328 0%,#cf0404 100%);
+	background: radial-gradient(ellipse at center, #ff7328 0%,#cf0404 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7328', endColorstr='#cf0404',GradientType=1 );
+    box-shadow: 0 0 8px #ff00eb;
+}
+
+.eighty-skin .text-view input{
+    background: #00000087;
+    border-radius: 6px;
+    color: #e265db;
+    text-shadow: 0 0 25px #ff00f8;
+}
+
+.eighty-skin button{
+	font-size:35px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	outline: none;
+	background: #020615;
+    color: aqua;
+    text-shadow: 0 0 25px #0a7a96;
+}
+
+.eighty-skin button:active{
+	background: #2a0432;
+    color: aqua;
+}
